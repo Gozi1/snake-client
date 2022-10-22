@@ -17,6 +17,35 @@ const connect = function () {
   conn.on("connect", () => {
     conn.write("Name: NSN");
   });
+  // setInterval( ()=>{
+  //   conn.on("connect", () => {
+  //       conn.write("Move: up");
+  //     });
+  // },500)
+  // setTimeout( ()=>{conn.on("connect", () => {
+  //   conn.write("Move: up");
+  // });},500);
+  // setTimeout( ()=>{conn.on("connect", () => {
+  //   conn.write("Move: left");
+  // });},500);
+  // setTimeout( ()=>{conn.on("connect", () => {
+  //   conn.write("Move: down");
+  // });},500);
+  // setTimeout( ()=>{conn.on("connect", () => {
+  //   conn.write("Move: right");
+  // });},500);
+  // conn.on("connect", () => {
+  //   conn.write("Move: up");
+  // });
+  // conn.on("connect", () => {
+  //   conn.write("Move: left");
+  // });
+  // conn.on("connect", () => {
+  //   conn.write("Move: down");
+  // });
+  // conn.on("connect", () => {
+  //   conn.write("Move: right");
+  // });
   return conn;
 };
 
