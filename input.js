@@ -22,29 +22,23 @@ const handleUserInput = function (key) {
   console.log(key);
   //moves snake up
   if(key === "w"){
-    connection.on("connect", () => {
-        connection.write("Move: up");
-    });
+    connection.write("Move: up");
   }
   //moves snake down
   if(key === "s"){
-    connection.on("connect", () => {
-        connection.write("Move: down");  
-      });
+    connection.write("Move: down")  
   }
   //moves snake left
   if(key === "a"){
-    connection.on("connect", () => {
-        connection.write("Move: left");
-      });
-      
+    connection.write("Move: left")   
   }
   //moves snake right
-  if(key === "d"){
-    connection.on("connect", () => {
-        connection.write("Move: right");
-      });
-      
+  if(key === "d"){ 
+    connection.write("Move: right")
+  }
+  if(key === "q"){
+    connection.write("Say: im here gg");
+    
   }
 };
 setupInput().on("data",handleUserInput);
