@@ -8,7 +8,7 @@ Before you can run this client, you will need to be running the server side whic
 
 ## **Final Product**
 
-![snake message](https://imgur.com/a/WKhUOkm)
+![snake message](snake_working.png)
 
 ## Getting Started
 
